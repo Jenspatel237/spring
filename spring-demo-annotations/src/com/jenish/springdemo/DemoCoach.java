@@ -3,13 +3,13 @@ package com.jenish.springdemo;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TennisCoach implements Coach
+public class DemoCoach implements Coach
 {
 
 	@Override
 	public String getDailyWorkout()
 	{
-		return "Practice your backhand volley";
+		return "Demo Coach daily workout.";
 	}
 
 }

@@ -5,11 +5,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class DemoCoach implements Coach
 {
-
+	
 	@Override
 	public String getDailyWorkout()
 	{
 		return "Demo Coach daily workout.";
+	}
+
+	@Override
+	public String getDailyFortune()
+	{
+		// 
+		return null;
 	}
 
 }

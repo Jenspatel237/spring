@@ -1,26 +1,26 @@
 package com.jenish.springdemo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
-public class SwimCoach implements Coach
+@Component
+public class Swim1Coach implements Coach
 {
-
-	private FortuneService fortuneService;
-	
 	@Value("${foo.email}")
 	private String email;
-	
+
 	@Value("${foo.team}")
 	private String team;
 	
-	public SwimCoach(FortuneService fortuneService)
-	{
-		this.fortuneService = fortuneService;
-	}
+	@Autowired
+	@Qualifier("randomFortuneService")
+	private FortuneService fortuneService;
 	@Override
 	public String getDailyWorkout()
 	{
-		return "swim 1000 meters as a warm up.";
+		return "Do 20 laps each day";
 	}
 
 	@Override
@@ -28,15 +28,17 @@ public class SwimCoach implements Coach
 	{
 		return fortuneService.getFortune();
 	}
-	
+
 	public String getEmail()
 	{
 		return email;
 	}
+
+
 	public String getTeam()
 	{
 		return team;
 	}
-	
-	
+
+
 }

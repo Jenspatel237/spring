@@ -2,7 +2,7 @@ package com.jenish.springdemo;
 
 import java.util.Random;
 
-import org.springframework.beans.factory.annotation.Value;
+
 import org.springframework.stereotype.Component;
 
 @Component

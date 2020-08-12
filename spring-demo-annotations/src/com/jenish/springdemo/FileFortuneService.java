@@ -43,6 +43,7 @@ public class FileFortuneService implements FortuneService
 				theFortunes.add(tempLine);
 				
 			}
+			br.close();
 		} 
 		
 		catch (FileNotFoundException e)

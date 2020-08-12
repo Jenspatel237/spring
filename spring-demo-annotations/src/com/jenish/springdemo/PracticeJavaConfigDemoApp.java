@@ -13,6 +13,8 @@ public class PracticeJavaConfigDemoApp
 		
 		System.out.println(thePracticeCoach.getDailyWorkout());
 		System.out.println(thePracticeCoach.getDailyFortune());
+		
+		context.close();
 
 	}
 

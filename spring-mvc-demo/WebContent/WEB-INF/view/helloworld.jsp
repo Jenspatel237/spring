@@ -7,9 +7,13 @@
 <title>Hello world Page</title>
 </head>
 <body>
-	<h2> Hellow world of spring!</h2>
+	<h2> Hello world of spring!</h2>
 	<br><br>
 	
 	Student Name: ${param.studentName}
+	<br><br>
+	
+	The message: ${message}
+	
 </body>
 </html>

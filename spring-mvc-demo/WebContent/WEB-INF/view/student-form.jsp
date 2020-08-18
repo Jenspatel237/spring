@@ -22,6 +22,20 @@
 				
 			</form:select>
 			<br><br>
+			
+			Favorite Language: 
+			
+			<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}"/>
+			
+			<br><br>
+			
+			Operating Languages: 
+			
+			<form:checkbox path="operatingSystems" value="Linux" /> Linux
+			<form:checkbox path="operatingSystems" value="Mac Os"/> Mac Os
+			<form:checkbox path="operatingSystems" value="MS Windows"/> MS Windows
+			
+			<br><br>
 			<input type="submit" value="Submit" />
 			
 		</form:form>
